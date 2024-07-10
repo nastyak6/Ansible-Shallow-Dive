@@ -1,0 +1,22 @@
+
+-
+
+  hosts: all
+  gather_facts: no
+  user: docker
+
+  tasks:
+    - name: copy and execute script to all hosts
+      script: /home/ansible/ansible_course/03_playbooks//02_playbook_copy_vars/script.sh
+        #register: output
+      become: True
+      notify: release name 
+
+  handlers:
+    - name: release name
+      debug:
+        msg: the script showed the release 
+  # Note: not all are required to be used in single playbook
+
+...
+
