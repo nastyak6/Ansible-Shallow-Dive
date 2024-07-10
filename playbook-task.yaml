@@ -16,7 +16,6 @@
     - name: release name
       debug:
         msg: the script showed the release 
-  # Note: not all are required to be used in single playbook
 
 ...
 
