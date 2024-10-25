@@ -17,4 +17,7 @@ why would i need `hosts.ini` file ?
 - why not import the static values from the /etc/os-release ?
 
 ### ANSIBLE
+- ansible playbook is not working
+  -  ansible vairable that is registered is not correct
+  -  the debug message is not working.
 - despite tasks requirements: why not use shell command in yaml with ansible `shell` module  ?
